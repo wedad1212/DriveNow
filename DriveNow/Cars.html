@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveNow - السيارات والحجز</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+
+<body>
+
+ 
+  <div class="site-header">
+    <div class="container header-inner">
+      <div class="brand">DriveNow</div>
+      <div class="nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a class="active" href="Cars.html">السيارات</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="container section">
+    <div class="section-heading">
+      <div>
+        <h2>قائمة السيارات</h2>
+        <p>يمكنك عرض تفاصيل كل سيارة واختيار أكثر من سيارة.</p>
+      </div>
+      <span class="pill">5 سيارات متاحة</span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="cars-table">
+        <thead>
+          <tr>
+            <th>الصورة</th>
+            <th>الرمز</th>
+            <th>الموديل</th>
+            <th>سنة الصنع</th>
+            <th>السعر اليومي</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img class="car-thumb" src="images/Toyota_Corolla.png" alt="Toyota Corolla" /></td>
+            <td>CR-001</td>
+            <td>Toyota Corolla</td>
+            <td>2023</td>
+            <td>2500 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-1" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-001" data-name="Toyota Corolla" data-price="2500" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-1">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Toyota Corolla</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 25,000 كم</span>
+                <span>اللون: أبيض</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Kia_Sportage.png" alt="Kia Sportage" /></td>
+            <td>CR-002</td>
+            <td>Kia Sportage</td>
+            <td>2022</td>
+            <td>4000 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-2" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-002" data-name="Kia Sportage" data-price="4000" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-2">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Kia Sportage</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 31,000 كم</span>
+                <span>اللون: رمادي</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Hyundai_Elantra.png" alt="Hyundai Elantra" /></td>
+            <td>CR-003</td>
+            <td>Hyundai Elantra</td>
+            <td>2024</td>
+            <td>3000 ل.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-3" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-003" data-name="Hyundai Elantra" data-price="3000" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-3">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Hyundai Elantra</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 4</span>
+                <span>عداد الكيلومترات: 12,000 كم</span>
+                <span>اللون: أزرق</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Chevrolet _Spark.png" alt="Chevrolet Spark" /></td>
+            <td>CR-004</td>
+            <td>Chevrolet Spark</td>
+            <td>2021</td>
+            <td>1800 ل.ج.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-4" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-004" data-name="Chevrolet Spark" data-price="1800" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-4">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Chevrolet Spark</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: يدوي</span>
+                <span>المقاعد: 4</span>
+                <span>عداد الكيلومترات: 42,000 كم</span>
+                <span>اللون: أحمر</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="car-thumb" src="images/Mercedes_Benz_C.png" alt="Mercedes-Benz C-Class" /></td>
+            <td>CR-005</td>
+            <td>Mercedes-Benz C-Class</td>
+            <td>2023</td>
+            <td>5500 ل.ج.س</td>
+            <td><label><input class="details-toggle" type="checkbox" data-target="details-5" /> عرض</label></td>
+            <td><label><input class="car-select" type="checkbox" value="CR-005" data-name="Mercedes-Benz C-Class" data-price="5500" /> اختيار</label></td>
+          </tr>
+          <tr class="details-row" id="details-5">
+            <td colspan="7">
+              <div class="details-box">
+                <strong>Mercedes-Benz C-Class</strong>
+                <span>الوقود: بنزين</span>
+                <span>ناقل الحركة: أوتوماتيك</span>
+                <span>المقاعد: 5</span>
+                <span>عداد الكيلومترات: 18,000 كم</span>
+                <span>اللون: أسود</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  
+    <div class="continue-area">
+      <p id="selection-message">لم يتم اختيار أي سيارة بعد.</p>
+      <button class="button button-primary" id="continue-button" type="button">متابعة الحجز</button>
+    </div>
+
+    
+    <div id="booking-section" class="booking-card" style="display: none;">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">الخطوة الأخيرة</p>
+          <h2>نموذج طلب الحجز</h2>
+        </div>
+        <span class="pill">معلومات الزبون</span>
+      </div>
+
+      <p>الحقول المعلمة بنجمة إلزامية.</p>
+
+      <form id="booking-form" action="#" method="post">
+        <fieldset>
+          <legend>المعلومات الشخصية</legend>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name">الاسم الكامل</label>
+              <input id="full-name" name="fullName" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="national-id">الرقم الوطني *</label>
+              <input id="national-id" name="nationalId" type="text" maxlength="11" />
+            </div>
+
+            <div class="form-field">
+              <label for="mobile">رقم الموبايل</label>
+              <input id="mobile" name="mobile" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" name="email" type="text" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>مدة التأجير</legend>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="start-date">تاريخ البداية *</label>
+              <input id="start-date" name="startDate" type="text" placeholder="yyyy-mm-dd" />
+            </div>
+
+            <div class="form-field">
+              <label for="end-date">تاريخ النهاية *</label>
+              <input id="end-date" name="endDate" type="text" placeholder="yyyy-mm-dd" />
+            </div>
+          </div>
+        </fieldset>
+
+        <div id="form-error" class="message error-message" style="display: none;"></div>
+
+        <button class="button button-primary" type="submit">إرسال طلب الحجز</button>
+      </form>
+
+      <div id="booking-result" class="result-card" style="display: none;"></div>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
